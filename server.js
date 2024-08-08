@@ -59,7 +59,7 @@ async function sendResetEmail(email, token) {
       },
     });
 
-    const resetUrl = `http://localhost:3000/reset-password?token=${token}`;
+    const resetUrl = `https://weather-webiste-mern-frontend-mfa.vercel.app/reset-password?token=${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL,
